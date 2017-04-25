@@ -57,7 +57,7 @@ centre.style.margin = "0 auto";
 centre.style.display = "table";
 document.body.appendChild(centre);
 centre.appendChild(headField);
-gameField.style.backgroundColor = "#C0B0A0";
+gameField.style.backgroundColor = "#F7DDC3";
 gameField.style.width = 23*x + "px";
 centre.appendChild(gameField);
 HTMLView(gameFieldData);
@@ -283,9 +283,9 @@ function GetColor(option){
 		case "*":
 			return "#665544";
 		case "1":
-			return "#A0A0FF"; //square
+			return "#8b8bd6"; //square
 		case "2":
-			return "C98EE9"; //line
+			return "C390D4"; //line
 		case "3":
 			return "#FAFA70"; //zigzag
 		case "4":
@@ -295,9 +295,9 @@ function GetColor(option){
 		case "6":
 			return "#FC9D74"; //reborder
 		case "7":
-			return "#B9FFB9"; //triangle
+			return "#73ba73"; //triangle
 		default:
-			return "#C0B0A0";
+			return "#F7DDC3";
 	}
 }
 function HTMLView(gameFieldData){
@@ -321,7 +321,7 @@ function ViewHead(){
 	'height=\'' + 2*y + '\' width=\'' + 11*x + '\'><b>SCORES	:<br>' + score + '</th>'
 	tmpnextFigureLandscape = ViewFigureOnLandscape(figures[nextFigureName].left, nextFigureField)
 	for(var str = 0; str < tmpnextFigureLandscape.length; str++){
-		headHTML += '<tr bgcolor ="#C0B0A0" >';
+		headHTML += '<tr bgcolor ="#F7DDC3" >';
 		for(var ceil = 0; ceil < tmpnextFigureLandscape[str].length; ++ceil){
 			var color = GetColor(tmpnextFigureLandscape[str][ceil]);
 			headHTML += '<th bgcolor = \'' + color + '\' ></th>';
